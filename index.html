@@ -8,49 +8,47 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
     <nav style="text-align:center">
       <header>
         <h1>Formulario de datos</h1></header>
   <section>
-    <form action="">
-    <div>
-
+    <form action>
+      <div>
         <label for="nombre">Nombre</label><br>
-        <input id="nombre" type="text"required>
+        <input id="nombre" pattern="^[a-zA-Z_áéíóúñ\s]*$" type="text"required>
       </div></br>
       <div>
         <label for="apellido">Apellido</label><br>
-        <input id="apellido" type="text"required>
+        <input id="apellido" type="text" pattern="^[a-zA-Z_áéíóúñ\s]*$" required>
       </div><br>
       <div>
         <label for="telefono">Teléfono</label><br>
         <input type="text" pattern="^[9]\d{8}$" title="Solo números" required>
       </div><br>
-      <div>
+    <div>
         <p>Escoge tu carro para continuar</p><br>
-
-        <select required="required">
-        <option text="Escoge">Escoge tu carro</option>
-        <option value="value1">Volvo</option>
-        <option value="value2" >Saab</option>
-        <option value="value3">Mercedes</option>
-        <option value="value4">Audi</option>
+        <select required>
+          <option value>Escoge tu carro</option>
+          <option value="value1">Volvo</option>
+          <option value="value2">Saab</option>
+          <option value="value3">Mercedes</option>
+          <option value="value4">Audi</option>
         </select>
-      </div><br><br><br><br>
+      </div>
+      <br>
+      <br>
       <div>
         <label for="email">Email</label><br>
         <input id="email" type="email"required>
-      </div><br>
+      </div>
+      <br>
       <div>
         <label for="contraseña">Crea tu Contraseña</label><br>
         <input type="password" pattern="^@?(\w){6,30}$" title="Como mínimo 6 caracteres" required>
-      </div><br>
-
+      </div>
+      <br>
       <button type="submit">Enviar</button>
-
         </nav>
-
     </form>
   </section>
   <script scr="assets/js/javascript.js"></script>
